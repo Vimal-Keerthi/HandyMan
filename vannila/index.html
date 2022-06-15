@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">HANDYCRAFT</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                 Catalog
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Top Trends</a></li>
+                  <li><a class="dropdown-item" href="#">New Collection</a></li>
+                  <li><a class="dropdown-item" href="#">Find near</a></li>
+                </ul>
+              </li>
+              
+            <!-- </ul> -->
+            <li class="nav-item">
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Find your search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Go</button>
+            </form>
+        </li>
+            <!-- <ul class="navbar-nav me-auto mb-2 mb-lg-0"> -->
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Sign Up</a>
+                    
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Cart</a>
+
+                </li>
+                  
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+     <div class="container-fluid my-5">
+        <div id="carouselExampleIndicators" class="carousel slide container-fluid" data-bs-ride="true">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img style="height:48vh" src="img/img1.jpg" class="w-100 caro" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img style="height:48vh" src="img/img2.jpg" class="w-100 caro" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img style="height:48vh" src="img/img3.jpg" class="w-100 caro" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img style="height:48vh" src="img/img4.jpg" class="w-100 caro" alt="...">
+              </div>
+              <div  class="carousel-item">
+                <img style="height:48vh" src="img/img6.jpg" class="w-100 caro" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+     </div>
+     <div class="container" style="text-align: center;">
+      <div class="row row-cols-1 row-cols-md-4 g-4">
+        <a href="">
+          <div class="col">
+            <div class="card">
+              <img style="height:20vh" src="img/img4.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">TOP TRENDS</h5>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="">
+
+          <div class="col">
+            <div class="card">
+              <img style="height:20vh" src="img/img5.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">NEW</h5>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="">
+          <div class="col">
+            <div class="card">
+              <img style="height:20vh" src="img/img6.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">LOCAL</h5>
+              </div>
+            </div>
+          </div>
+
+        </a>
+        <a href="">
+
+          <div class="col">
+            <div class="card">
+              <img style="height:20vh" src="img/img6.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">TOP RATED</h5>
+              </div>
+            </div>
+          </div>
+        </a>
+       
+      </div>
+     </div>
+     <footer>
+
+     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>
