@@ -1,0 +1,26 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="/style.css")
+        title LocalHandy Mart | Profile 
+    body YOUR PROFILE 
+        hr
+        span  
+            img.icon(src="/personicon.jpg")
+            h2 Hi #{rows[0].fname}!
+            span userid: #{rows[0].username}
+            br
+            span First Name: #{rows[0].fname}
+            br
+            span Last Name: #{rows[0].lname}
+            br
+            span Address: #{rows[0].address}
+            br
+            span Phone: #{rows[0].phone}
+            br
+        span Rating: 
+            -for(var i=1; i<=result[0].stars; i++)
+                span ⭐

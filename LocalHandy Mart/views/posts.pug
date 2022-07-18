@@ -1,0 +1,12 @@
+html 
+    head 
+    title LocalHandy | MyPosts
+    link(rel='stylesheet', href='/style.css') 
+    body 
+    h2 My Posts 
+    br
+    div.posts 
+        div 
+            each obj in rows
+                img.image.class1(src=obj.rel_path)
+                p.class1 Price : #{obj.price}

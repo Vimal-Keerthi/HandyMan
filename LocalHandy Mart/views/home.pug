@@ -1,0 +1,48 @@
+html 
+head 
+ link(rel='stylesheet', href='/style.css')
+title LocalHandy Mart 
+body
+ h2 LocalHandy Mart
+ if username 
+    a(href="/profile") View Profile 
+    br
+    a(href="/requests") Your requests 
+    br
+    a(href="/acceptance") Your acceptances 
+    br  
+    a(href="/myposts") View my posts 
+    hr
+    p sell your handicrafts? 
+     a(href="/post") make a post 
+ else
+    a(href="/login") Login/ Register 
+ hr
+ span 
+  form(action="/getlocal", method="post")
+   // input(type="text", placeholder="enter your city")
+   input(type="submit", value="Get Local")
+ hr
+
+ div 
+  a(href="/top") Top Sellers
+  br
+  a(href="/catalog") Catalog 
+ hr
+
+ if rows 
+   each row in rows 
+      p #{row.username} #{row.stars}
+ if posts
+   - var cat = posts[0].category
+   //- p #{cat}
+   each post in posts 
+      if(post.category !== cat) 
+         - var cat = post.category 
+         h2 #{cat}
+      p #{post.username} #{post.about}
+      br
+      img.image(src=post.rel_path)
+ if locals 
+   each local in locals 
+      p hii

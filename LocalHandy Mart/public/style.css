@@ -1,0 +1,15 @@
+.class1 {
+    margin-left: 2vw;
+}
+
+.icon {
+    height: 30vh;
+}
+
+.image {
+    height: 14vh;
+}
+
+.posts {
+    display: flex;
+}
